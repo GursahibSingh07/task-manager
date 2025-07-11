@@ -22,5 +22,5 @@ def import_tasks(modified_tasks):
     global tasks
     tasks = modified_tasks
     with open(Task_file, mode = "w") as file:
-        json.dump(tasks, file)
+        json.dump(tasks, file, indent = 4)
 
